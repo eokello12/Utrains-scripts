@@ -17,3 +17,11 @@ if [ "$current_disk_usage" -gt "$threshold_percentage" ]; then
     echo "Disk usage exceeded threshold. Current usage: $current_disk_usage%"
     # Add additional actions or alerts here (e.g., notify the app team)
 fi
+
+# Schedule this script to run periodically using a cron job. Open crontab file
+# crontab -e
+
+# Add a line to schedule the script to run, for example, every day and midnight:
+# 0 0 * * * /path/to/cleanup_logs.sh
+
+
